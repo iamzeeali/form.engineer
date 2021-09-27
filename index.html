@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form.engineer</title>
+    <!--  CUSTOM CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BS-4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- BS-4 SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- ICONS CSS -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <a href='/' class='fab'>
+            <i class="far fa-bell my-fab"></i>
+        </a>
+        <button type="button" class='chat' onclick="openForm()" style="cursor: pointer;">
+            <span>Questions?</span>
+            </button>
+        <div class="chat-popup" id="myForm">
+            <div class="form-container">
+                <i class="fas fa-chevron-circle-down mb-3 px-2 text-secondary" style="float: right;" onclick="closeForm()"></i>
+                <br>
+                <img src="https://res.cloudinary.com/expertips/image/upload/q_auto:eco,c_fill,w_100,h_100/DeploymentPhotos/sb3qsujajpuvwsilvhel.png" alt="" style="margin-top: -20px; width: 30%; float: left">
+                <h4 style="margin-bottom: -2px;">Form Engineer </h4>
+                <h6>Form Engineer</h6>
+                <div class="chat-message p-3 mt-5 ml-2">
+                    Oh no! Looks like I'm not available at the moment. Click the "message" below to open the form to submit a message and I will follow up as soon as I get your message.
+                </div>
+                <small class="px-3 ">25 September 19:22</small>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Say Something" id="demo" name="email">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="far fa-smile-beam"></i></span>
+                        <span class="input-group-text"><i class="fas fa-microphone"></i></span>
+                        <span class="input-group-text"><i class="fas fa-paperclip"></i></span>
+                    </div>
+                </div>
+                <div class="chat-icons p-3 text-center">
+                    <div class="row">
+                        <div class="col-sm-4"><i class="far fa-comments"></i> <br>
+                            <small>Chat</small>
+                        </div>
+                        <div class="col-sm-4"><i class="far fa-address-book"></i> <br>
+                            <small>Contact</small>
+                        </div>
+                        <div class="col-sm-4"><i class="fas fa-video">
+                                </i> <br>
+                            <small>Video Call</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav navbar navbar-expand-lg  stickynav container fixed-top navbar-light bg-white pt-4 pb-4 ">
+            <a class="navbar-brand" href="#">
+                <img src="https://form.engineer/assets/form-engineer-logo-best.png" alt="logo" height="40" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pl-3">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Pricing <span class="sr-only">(current)</span></a
+                                >
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+                <button class="try-btn btn btn-primary">Try For Free</button>
+            </div>
+        </nav>
+    </div>
+    <!-- INTRO SEECTION -->
+    <section class="intro py-5 ">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-sm-6">
+                    <h1>
+                        Make beautiful forms with Drag-n-Drop interface
+                        <span style="color: #5e22e6"> instantly </span>.
+                    </h1>
+                    <h5 class="py-4">No Coding Required</h5>
+                    <button class="try-btn btn btn-primary mt-3">Get Started</button>
+                </div>
+                <div class="col-sm-6  mt-lg-0">
+                    <div>
+                        <div class="vadoo_player" vid="vivpJeMMmBlYHcLYJhEt79s5Z3ww7HYm" etype="responsive"></div>
+                        <script src="https://api.vadoo.tv/static/vadoo_player.min.js" id="player_script" vid="vivpJeMMmBlYHcLYJhEt79s5Z3ww7HYm"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FORM STEP SECTION -->
+    <section class="forms-step bg-white py-5">
+        <div class="container">
+            <h1>3 Simple Steps to get started <br>making Forms</h1>
+            <div class="steps my-5">
+                <div class="row pl-5">
+                    <div class="col-sm-3 ">
+                        <div class="the-step">
+                            <span class="number">
+                                01
+                                </span>
+                        </div>
+                        <h4>Create form using <br>Drag-n-Drop</h4>
+                        <h6>Easily create a modern form using drag-n-drop fields with options for all types of input fields including dropdowns, multiple choice, date & time and allow users to upload a file.</h6>
+                    </div>
+                    <div class="col-sm-1 arrow">
+                        <i class="fas fa-long-arrow-alt-right fa-3x pt-4"></i>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="the-step">
+                            <span class="number">
+                                02
+                                </span>
+                        </div>
+                        <h4>Modify Conditional <br> Fields and SMTP settings</h4>
+                        <h6>Embed your form on your Web site, direct users to a unique web page with your form, or download the HTML. Integrate with Mailchimp or add custom CSS and JS.</h6>
+                    </div>
+                    <div class="col-sm-1 arrow">
+                        <i class="fas fa-long-arrow-alt-right fa-3x pt-4"></i>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="the-step">
+                            <span class="number">
+                                03
+                                </span>
+                        </div>
+                        <h4>Advanced Options, <br>Integrate & Share</h4>
+                        <h6>Embed your form on your Web site, direct users to a unique web page with your form, or download the HTML. Integrate with Mailchimp or add custom CSS and JS.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES SECTION -->
+    <section class="features py-5">
+        <div class="container">
+            <h1>All the features you expect, <br>and more.</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-2"><i class="fas fa-hourglass-half "></i></div>
+                        <div class="col-sm-10 ">
+                            <h4>Modern, intuitive design</h4>
+                            <h6>We have high expectations for the software we use, and we know you do too. Our modern, intuitive design feels like a delight, not a drag.</h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2"><i class="far fa-gem "></i></div>
+                        <div class="col-sm-10">
+                            <h4>All HTML5 form fields</h4>
+                            <h6>A complete set of HTML5 form fields to add any type of fields in your website</h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2"><i class="fas fa-cube "></i></div>
+                        <div class="col-sm-10">
+                            <h4>Conditional Form fields</h4>
+                            <h6>Use conditional fields to show or hide fields based on responses. Guide users through toward the precise destination.</h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2"><i class="fas fa-signal"></i></div>
+                        <div class="col-sm-10">
+                            <h4>Multiple theme selection options</h4>
+                            <h6>
+                                With 10+ themes, advanced customization, and custom CSS options, your form can look exactly the way you
+                                <like class=""></like>
+                            </h6>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-2"><i class="fas fa-bezier-curve"></i></div>
+                        <div class="col-sm-10 ">
+                            <h4>Use Form anywhere</h4>
+                            <h6>Directly share the form link or embed forms in your website, no framework dependency. Use the way you like.</h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2"><i class="far fa-gem "></i></div>
+                        <div class="col-sm-10">
+                            <h4>Integrated with mailchimp</h4>
+                            <h6>Integrate your form with mailchimp, directly get all users information in your mailchimp account</h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2"><i class="fas fa-signal "></i></div>
+                        <div class="col-sm-10">
+                            <h4>Analytics & insightss</h4>
+                            <h6>Analyze your users submitted data with intuitive pie chart.</h6>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2"><i class="fas fa-signal"></i></div>
+                        <div class="col-sm-10">
+                            <h4>Conditional Fields</h4>
+                            <h6>With conditional fields you can show or hide an fields based on users input</h6>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONY SECTION -->
+    <section class="testimony bg-white py-5">
+        <div class="container">
+            <h5 style="text-align: center; opacity: 0.9;">Loved by more than 300 customer like you</h5>
+            <h1>What They Say About Us</h1>
+            <div class="row">
+                <div class="col-sm-6 mt-4 ">
+                    <i class="fas fa-quote-left ml-4 p-3 text-white quote-icon"></i>
+                    <div class="content p-5 shadow-light my-4">
+                        I love this form generator and have used it to create several of my forms. It is so simple to use and does not require advanced coding knowledge. I love the fact that it is available on the web and is mobile-friendly. I also love that I can create a form
+                        in minutes and send it to my visitors.
+                        <br>
+                        <br>
+                        <div class="testifier">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" width="60">
+                                </div>
+                                <div class="col-sm-10 stars">
+                                    <i class="fas fa-star mx-0 px-0"></i>
+                                    <i class="fas fa-star mx-0 px-0"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <br>
+                                    <h6>Charles</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-4">
+                    <i class="fas fa-quote-left ml-4 p-3 text-white quote-icon"></i>
+                    <div class="content p-5 shadow-light my-4">
+                        I love this form generator and have used it to create several of my forms. It is so simple to use and does not require advanced coding knowledge. I love the fact that it is available on the web and is mobile-friendly. I also love that I can create a form
+                        in minutes and send it to my visitors.
+                        <br>
+                        <br>
+                        <div class="testifier">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="https://randomuser.me/api/portraits/men/57.jpg" alt="" width="60">
+                                </div>
+                                <div class="col-sm-10 stars">
+                                    <i class="fas fa-star mx-0 px-0"></i>
+                                    <i class="fas fa-star mx-0 px-0"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <br>
+                                    <h6>Mike</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="section-gap theme-gray">
+        <div class="col-lg-8 col-xl-6 mx-auto mb-5">
+            <h2 class="block__title mb-3 text-center">
+                Contact us.
+            </h2>
+            <p class="text-center pb-3">By the way, this form was made using Form Engineer!</p>
+            <div class=" container-fluid ">
+                <div class="row">
+
+                    <div class="full-width">
+                        <div class="card">
+                            <div id="con-form" role="tabpanel" class="tab-content card-body" style="background-color: rgb(255, 255, 255);">
+                                <form id="show_form" action="#" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div title="" class="">
+                                                <div data-v-31f754de="" class="">
+                                                    <h2 style="color:#ee301d">Contact us</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div title="" class="">
+                                                <div data-v-31f754de="" class="">
+                                                    <p style="color:#343637">Fill out the form below and we will contact you soon, here email &amp; phone no. are conditional fields, fill the name and see the effect.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div title="" class="form-group">
+                                                <label for="field_1" class="form-field">
+                                                    <span style="color: rgb(0, 0, 0);">Name</span>
+                                                    <span style="color: rgb(128, 90, 89);">*</span>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <i  class="fas fa-user"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" name="field_1" placeholder="Enter your name" id="field_1" class="form-control valid" aria-invalid="false" required>
+                                                    <!---->
+                                                </div>
+                                                <input id="field_1-error" class="error" style="display: none;">
+                                                <!---->
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <div title="" class="form-group show">
+                                                <label for="field_2" class="form-field">
+                                                    <span style="color: rgb(0, 0, 0);"> Email </span> 
+                                                    <span style="color: rgb(169, 68, 66);">*</span>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i  class="fas fa-envelope"></i></span>
+                                                    </div>
+                                                    <input type="email" name="field_2" placeholder="Email to contact you" required="required" id="field_2" data-msg-required="This field is required" data-rule-email="true" data-msg-email="Please provide a valid email" class="form-control show valid" aria-invalid="false">
+                                                    <!---->
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <div title="" class="form-group show">
+                                                <label for="field_4" class="form-field">
+                                                <span style="color: rgb(0, 0, 0);">  Phone No. </span>
+                                                <!---->
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i  class="fas fa-phone"></i></span>
+                                                    </div>
+                                                    <input type="text" name="field_4" placeholder="Phone number to contact you" id="field_4" data-msg-required="This field is required" data-rule-phone="true" data-msg-phone="This doesn't appear to be a phone number." class="form-control show">
+                                                    <!---->
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div title="" class="form-group">
+                                                <Label for="field_3" class="form-field">
+                                                    <span style="color: rgb(0, 0, 0);">Subject </span>
+                                                    <span style="color: rgb(169, 68, 66);">*</span>
+                                                </label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i  class="fas fa-question"></i></span>
+                                                    </div>
+                                                    <input type="text" name="field_3" required="required" id="field_3" data-msg-required="This field is required" class="form-control valid" aria-invalid="false">
+                                                    <!---->
+                                                </div>
+                                                <input id="field_3-error" class="error" style="display: none;">
+                                                <!---->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div title="" class="form-group">
+                                                <label for="field_5" class="form-field">
+                                                <span style="color: rgb(0, 0, 0);">Body </span>
+                                                </label>
+                                                <div class="input-group">
+                                                    <textarea rows="7" name="field_5" id="field_5" data-msg-required="This field is required" class="form-control valid" aria-invalid="false"></textarea>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Re capctha-->
+                                    <div class="col-md-12 my-3">
+
+                                        <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+
+                                    </div>
+
+                                    <!--Submit Button-->
+                                    <button type="submit" data-style="expand-right" name="status" value="complete" class="btn submit_btn ladda-button float-right btn-outline-primary">
+                                        <i class="fas  fa-save"></i> 
+                                        <span class="btn_text ladda-label">Submit and become a  Engineer</span>
+                                        <span class="ladda-spinner"></span> <br>
+                                        <span class="ladda-progress" style="width: 0px;"></span>
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONCLUSION SECTION -->
+    <section class="conclusion ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-7">
+                    <h1>Create Beautiful Forms easily.</h1>
+                    <br>
+                    <h6 class="text-white" style="opacity: 0.9;">A form builder where you can easily build forms using any of the basic or advanced fields. The most challenging and time-consuming job of designing a website is creating HMTL forms with various input fields.</h6>
+                    <h6 class="text-white">
+                        <br> Form Engineer helps you create limitless forms supporting all HTML fields in seconds and effortlessly without coding. As an advanced application, Form Engineer has an easy-to-use Drag-n-Drop interface to let you build simple
+                        and complex forms.
+                    </h6>
+                </div>
+                <div class="col-sm-5 conclusion-btn  flex-row-reverse">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+      <div class="footer mb-5">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Acceptable Use</a></li>
+                </ul>
+                <br>
+                <br>
+                <i class="fas fa-envelope"></i>
+                <br> <br>
+                <h6>© 2021 form.engineer</h6>
+            </div>
+        </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll', (e) => {
+            const nav = document.querySelector('.nav');
+            if (window.pageYOffset > 0) {
+                nav.classList.add("add-shadow");
+            } else {
+                nav.classList.remove("add-shadow");
+            }
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
